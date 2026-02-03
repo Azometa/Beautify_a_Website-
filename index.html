@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fran's Flowers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <!-- Accessibility skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <h1>Fran's Flowers</h1>
+    <p>Brightening San Francisco since 1995</p>
+  </header>
+
+  <!-- ✅ Required Responsive Navigation Bar -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      Menu
+    </button>
+
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#specials">Specials</a></li>
+      <li><a href="#visit">Visit Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="about.html">About Fran</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- ✅ Hero Image -->
+    <section class="hero" aria-label="Shop hero">
+      <img src="images/Hero.png" alt="Flower shop interior filled with colorful bouquets" />
+    </section>
+
+    <!-- ✅ About section -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About Us</h2>
+        <p>
+          Fran’s Flowers was founded in 1995 by Francine Miller to share joy, beauty,
+          and connection with the Mission District of San Francisco. We design bouquets
+          with care for every occasion and believe flowers bring people together.
+        </p>
+      </div>
+    </section>
+
+    <!-- ✅ Specials section -->
+    <section id="specials" class="section section-alt">
+      <div class="wrap">
+        <h2>Weekly Specials</h2>
+
+        <div class="cards">
+          <article class="card">
+            <img src="images/Potted_herbs.png" alt="Ceramic potted herbs arrangement" />
+            <h3>Ceramic Potted Herbs</h3>
+            <p class="price">$7.99</p>
+          </article>
+
+          <article class="card">
+            <img src="images/Wildflower_Bouquet.png" alt="Wildflower bouquet in a vase" />
+            <h3>Wildflower Explosion</h3>
+            <p class="price">$19.99</p>
+          </article>
+
+          <article class="card">
+            <img src="images/Sunflower_Bouquet.png" alt="Sunflower bouquet in a vase" />
+            <h3>Sunflower Delight</h3>
+            <p class="price">$12.99</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Seasonal Picks (LevelUp 5 pts) -->
+    <section id="seasonal" class="section">
+      <div class="wrap">
+        <h2>Seasonal Picks</h2>
+
+        <div class="seasonal">
+          <img src="images/Seasonal_Picks.png" alt="Featured seasonal bouquet with soft seasonal flowers" />
+          <div>
+            <h3>Seasonal Featured Bouquet</h3>
+            <p>
+              A limited-time seasonal bouquet chosen for freshness, color, and a soft elegant look.
+              Perfect for celebrations or a thoughtful surprise.
+            </p>
+            <p class="tag">Best for birthdays • Only here ’til October</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Testimonials (Required) -->
+    <section id="testimonials" class="section section-alt">
+      <div class="wrap">
+        <h2>Customer Testimonials</h2>
+
+        <figure class="quote">
+          <blockquote>
+            Fran’s Flowers made my anniversary unforgettable. The bouquet was stunning and lasted over a week!
+          </blockquote>
+          <figcaption>— Maria L.</figcaption>
+        </figure>
+
+        <figure class="quote">
+          <blockquote>
+            Fast pickup, friendly staff, and beautiful arrangements every time. Highly recommend!
+          </blockquote>
+          <figcaption>— James R.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ✅ Visit Us (Required link in nav) -->
+    <section id="visit" class="section">
+      <div class="wrap">
+        <h2>Visit Us</h2>
+        <p><strong>Address:</strong> 123 Mission St, San Francisco, CA</p>
+        <p><strong>Hours:</strong> Mon–Sat 9am–6pm • Sun 10am–4pm</p>
+        <p><strong>Phone:</strong> (415) 555-1234</p>
+        <p><strong>Email:</strong> info@fransflowers.com</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ✅ Footer Enhancements (Required) -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Fran’s Flowers</h3>
+        <p>Brightening San Francisco since 1995.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li><a href="about.html">About Fran</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Social</h3>
+        <div class="social">
+          <a href="#" aria-label="Fran's Flowers on Instagram">Instagram</a>
+          <a href="#" aria-label="Fran's Flowers on Facebook">Facebook</a>
+          <a href="#" aria-label="Fran's Flowers on X">X</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Fran’s Flowers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
